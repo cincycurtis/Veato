@@ -22,3 +22,8 @@ var Game = mongoose.model('Game', {
 	prev	: Schema.Types.Mixed,
 	gameId	: String
 });
+
+appget('/api/games', function(req, res) {
+	
+}
+
