@@ -13,17 +13,28 @@ app.listen(8080);
 console.log("App is listening on port 8080");
 
 var Game = mongoose.model('Game', {
-	name 	: String,
+	name 		: String,
 	updated	: { type: Date, default: Date.now }
 	owner 	: String,
-	email	: String,
-	curr 	: String,
+	email		: String,
+	curr 		: String,
 	currBy 	: String,
-	prev	: Schema.Types.Mixed,
+	prev		: Schema.Types.Mixed,
 	gameId	: String
 });
 
-appget('/api/games', function(req, res) {
-	
-}
+app.get('/api/games', function(req, res) {
+	Game.find(function(err, games) {
+		if (err) 
+			res.send(err);
 
+		res.json(games);	
+	});
+});
+
+app.post('/api/games', function(req, res) {
+	Game.create({
+		name : req.body.text,
+		
+	});
+})
