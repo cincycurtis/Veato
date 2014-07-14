@@ -33,8 +33,16 @@ app.get('/api/games', function(req, res) {
 });
 
 app.post('/api/games', function(req, res) {
+	
+	var Id = Math.random().toString(36).substr(2, 9);
+
 	Game.create({
-		name : req.body.text,
-		
+		name 		: req.body.title,
+		owner		: req.body.name,
+		email		: req.body.email,
+		curr		: req.body.suggestion,
+		currBy 	: req.body.name,
+		prev		: [{}],
+		gameId	: Id
 	});
 })
