@@ -1,0 +1,9 @@
+{
+	"name" : "Lunch with Dumbledore",
+	"owner": "Lord Voldemort",
+	"email": "triddle@hogwarts.edu",
+	"curr" : "Jimmy Johns",
+	"currBy" : "Harry Potter",
+	"players": [{"name" : "Harry Potter", "email" : "hpotter@hogwarts.edu"  }, {"name" : "Albus Dumbledore", "email" : "headmaster@hogwarts.edu"}]
+	"past" : ["Deep", "Applebees", "Jade Kitchen"]
+}

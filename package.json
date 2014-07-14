@@ -1,0 +1,11 @@
+{
+	"name" : "veato",
+	"version": "0.0.0",
+	"description": "App to help groups decide what's for lunch",
+	"main" : "app.js",
+	"author" : "Curt",
+	"dependencies" : {
+		"express" : "~3.4.4",
+		"mongoose" : "~3.6.2"
+	}
+}
